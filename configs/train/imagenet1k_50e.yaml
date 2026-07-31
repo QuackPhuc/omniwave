@@ -1,0 +1,20 @@
+seed: 42
+model_config: configs/model/omniweave_t.yaml
+data:
+  root: /datasets/imagenet
+  image_size: 224
+train:
+  epochs: 50
+  global_batch_size: 512
+  learning_rate: 1.0e-3
+  weight_decay: 0.05
+  warmup_epochs: 10
+  gradient_clip_norm: 1.0
+  amp: true
+  label_smoothing: 0.1
+  mixup_alpha: 0.8
+  cutmix_alpha: 1.0
+  random_erasing: true
+  ema: true
+  checkpoint_minutes: 120
+output_dir: runs/imagenet1k_50e

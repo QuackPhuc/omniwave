@@ -1,0 +1,76 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+*.so
+
+# === Virtual environments ===
+.venv/
+venv/
+env/
+
+# === IDE / Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# === Testing & Coverage ===
+.pytest_cache/
+.pytest-basetemp-*/
+pytest-*/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# === Training artifacts ===
+runs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+wandb/
+*.onnx
+
+# === Benchmark output ===
+results/
+*.json
+!configs/**/*.json
+
+# === Datasets (never commit) ===
+/data/
+/datasets/
+
+# === Logs ===
+*.log
+*.jsonl
+
+# === Interactive test notebooks (local/Kaggle/Colab only) ===
+notebooks/
+
+# === Triton cache ===
+.triton/
+
+# === Misc ===
+*.bak
+*.tmp
+.env
+.env.*
+
+# === Superpowers ===
+docs/superpowers/

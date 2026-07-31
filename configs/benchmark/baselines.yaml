@@ -1,0 +1,18 @@
+baselines:
+  - name: convnext_tiny
+    timm_name: convnext_tiny
+    role: modern_cnn
+  - name: deit_small_patch16_224
+    timm_name: deit_small_patch16_224
+    role: global_vit
+  - name: swin_tiny_patch4_window7_224
+    timm_name: swin_tiny_patch4_window7_224
+    role: hierarchical_vit
+  - name: efficientvit_b1
+    timm_name: efficientvit_b1
+    role: hardware_aware
+
+comparison_modes:
+  - matched_parameters
+  - matched_macs
+  - matched_latency

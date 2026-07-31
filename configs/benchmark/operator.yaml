@@ -1,0 +1,10 @@
+warmup: 100
+iterations: 1000
+batch_sizes: [1, 8, 32]
+dtypes: [float16, bfloat16, float32]
+shapes:
+  - {height: 56, width: 56, channels: 128, channel_tile: 64}
+  - {height: 28, width: 28, channels: 256, channel_tile: 64}
+  - {height: 14, width: 14, channels: 512, channel_tile: 128}
+  - {height: 7, width: 7, channels: 1024, channel_tile: 128}
+backends: [reference, compile, triton]

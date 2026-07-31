@@ -1,0 +1,15 @@
+seed: 17
+model_config: configs/model/omniweave_t.yaml
+data:
+  root: /datasets/imagenet
+  image_size: 224
+  subset_samples: 64
+train:
+  epochs: 200
+  global_batch_size: 64
+  learning_rate: 0.001
+  weight_decay: 0.05
+  gradient_clip_norm: 1.0
+  amp: false
+  checkpoint_minutes: 30
+output_dir: runs/overfit

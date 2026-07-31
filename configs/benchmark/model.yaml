@@ -1,0 +1,8 @@
+warmup: 50
+iterations: 200
+resolutions: [224, 384, 512, 1024]
+latency_batch_sizes: [1, 8]
+throughput_batch_sizes: [32, 64]
+backends: [reference, compile]
+models:
+  - omniweave_t

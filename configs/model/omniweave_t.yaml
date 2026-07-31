@@ -1,0 +1,12 @@
+model:
+  name: omniweave_t
+  widths: [128, 256, 512, 1024]
+  depths: [2, 3, 8, 2]
+  spatial_tile: 16
+  channel_tiles: [64, 64, 128, 128]
+  expansion: 2
+  layer_scale_init: 1.0e-5
+  drop_path_rate: 0.1
+  num_classes: 1000
+  anchor_stages: [3, 4]
+  backend: auto
